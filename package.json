@@ -1,0 +1,27 @@
+{
+  "name": "@vitest/example-test",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:run": "vitest run",
+    "start": "nodemon ./src/server.js"
+  },
+  "devDependencies": {
+    "@vitest/ui": "latest",
+    "nodemon": "^2.0.22",
+    "prisma": "^4.13.0",
+    "supertest": "^6.3.3",
+    "vite": "latest",
+    "vitest": "latest"
+  },
+  "stackblitz": {
+    "startCommand": "npm run test:ui"
+  },
+  "dependencies": {
+    "fastify": "^4.15.0"
+  }
+}
